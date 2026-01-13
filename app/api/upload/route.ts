@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
        return NextResponse.json({ error: 'No questions found in PDF. Please ensure format is correct.' }, { status: 400 });
     }
 
-    saveQuestions(questions);
+    await saveQuestions(questions);
 
     return NextResponse.json({ success: true, count: questions.length, questions });
   } catch (error: any) {
