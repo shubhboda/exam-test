@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "text": "Stack ka use kis liye hota hai?",
+    "options": [
+      "A. FIFO structure",
+      "B. LIFO structure",
+      "C. Sorting data",
+      "D. Searching data"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "text": "Queue ka principle kya hai?",
+    "options": [
+      "A. LIFO",
+      "B. FILO",
+      "C. FIFO",
+      "D. Random"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 3,
+    "text": "Array ka main disadvantage kya hai?",
+    "options": [
+      "A. Fixed size",
+      "B. Fast access",
+      "C. Easy traversal",
+      "D. Indexing"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 4,
+    "text": "Linked List me data kaise store hota hai?",
+    "options": [
+      "A. Contiguous memory",
+      "B. Random memory",
+      "C. Nodes ke form me",
+      "D. Tree form"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 5,
+    "text": "Binary Search kab apply hota hai?",
+    "options": [
+      "A. Unsorted array",
+      "B. Sorted array",
+      "C. Linked list",
+      "D. Stack"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 6,
+    "text": "Time Complexity ka matlab kya hai?",
+    "options": [
+      "A. Memory usage",
+      "B. Execution time analysis",
+      "C. Code length",
+      "D. Output size"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 7,
+    "text": "Tree ka root node kya hota hai?",
+    "options": [
+      "A. Last node",
+      "B. Leaf node",
+      "C. Starting node",
+      "D. Random node"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 8,
+    "text": "Graph me edges kya represent karte hain?",
+    "options": [
+      "A. Nodes",
+      "B. Data",
+      "C. Relationship",
+      "D. Memory"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 9,
+    "text": "Recursion ka base case kyu zaruri hai?",
+    "options": [
+      "A. Speed badhane ke liye",
+      "B. Infinite loop rokne ke liye",
+      "C. Memory bachane ke liye",
+      "D. Code chhota karne ke liye"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 10,
+    "text": "Hashing ka use kyu hota hai?",
+    "options": [
+      "A. Sorting",
+      "B. Fast data access",
+      "C. Traversal",
+      "D. Deletion"
+    ],
+    "correctAnswer": "B"
+  }
+]
