@@ -6,13 +6,14 @@ export async function parsePdfToQuestions(buffer: Buffer): Promise<Question[]> {
     const pdfParser = new PDFParser(null, 1); // 1 = text mode
 
     pdfParser.on('pdfParser_dataError', (errData: any) => {
-      console.error(errData.parserError);
+      console.error('PDF Parser Error:', errData.parserError);
       reject(errData.parserError);
     });
 
     pdfParser.on('pdfParser_dataReady', (pdfData: any) => {
       try {
         const text = pdfParser.getRawTextContent();
+        console.log('PDF Text extracted (first 200 chars):', text.substring(0, 200));
         
         // pdf2json output often has page breaks and weird spacing.
         // We need to normalize it.
@@ -83,10 +84,12 @@ export async function parsePdfToQuestions(buffer: Buffer): Promise<Question[]> {
         
         resolve(questions);
       } catch (e) {
+        console.error('Error parsing PDF text:', e);
         reject(e);
       }
     });
 
+    // Handle buffer directly
     pdfParser.parseBuffer(buffer);
   });
 }

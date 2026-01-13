@@ -23,8 +23,8 @@ export async function POST(req: NextRequest) {
     saveQuestions(questions);
 
     return NextResponse.json({ success: true, count: questions.length, questions });
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error processing PDF:', error);
-    return NextResponse.json({ error: 'Failed to process PDF' }, { status: 500 });
+    return NextResponse.json({ error: `Failed to process PDF: ${error.message || error}` }, { status: 500 });
   }
 }

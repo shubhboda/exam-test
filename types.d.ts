@@ -1,8 +1,7 @@
 declare module 'pdf2json' {
-    import { EventEmitter } from 'events';
-
-    export default class PDFParser extends EventEmitter {
+    export default class PDFParser {
         constructor(context?: any, needRawText?: number);
+        on(event: string, callback: (data: any) => void): void;
         parseBuffer(buffer: Buffer): void;
         getRawTextContent(): string;
     }
